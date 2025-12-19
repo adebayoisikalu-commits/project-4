@@ -1,0 +1,163 @@
+@font-face {
+  font-family: 'SelfDeception';
+  src: url('Self Deception - TTF.ttf');
+}
+@font-face {
+  font-family: 'Transcity';
+  src: url('Transcity DEMO.otf');
+}
+html{
+    scroll-behavior: smooth;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #111;
+    color: #fff;
+}
+
+/* HEADER */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+     position: fixed;
+     top: 0;
+     left: 0;
+     z-index: 1000;
+     width: 100%;
+    padding: 20px 10px;
+    background: #000;
+}
+
+.logo {
+    font-family: 'Transcity';
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-list a {
+    text-decoration: none;
+    font-family: 'Transcity';
+    color: white;
+    font-weight: 500;
+}
+
+.nav-list a:hover {
+    color: #ff0066;
+}
+/* HERO */
+.hero {
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 10%;
+}
+
+.hero-text h1 {
+    font-family: 'Transcity';
+    font-size: 80px;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+font-family: 'SelfDeception';
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    padding: 12px 25px;
+    background: #ff0066;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: #cc0052;
+}
+
+/* SERVICES */
+.services {
+    padding: 80px 10%;
+    text-align: center;
+}
+.services h2 {
+    font-family: 'Transcity';
+    font-size: 30px;
+}
+.services h3{
+    font-family: 'Transcity';
+    font-size: 25px;
+}
+
+.service-box {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.box {
+    width: 300px;
+    background: #222;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.box:hover {
+    background: #333;
+}
+
+/* ABOUT */
+.about {
+    padding: 80px 10%;
+    background: #000;
+    text-align: center;
+}
+.about h2 {
+    font-family: 'Transcity';
+    font-size: 30px;
+}
+
+.about p {
+    max-width: 700px;
+    margin: auto;
+    line-height: 1.7;
+}
+
+/* CONTACT */
+  .contact {
+    text-align: center;
+    margin: 50px;
+  }
+  .contact h2 {
+font-family: 'Transcity';
+  }
+/* RESPONSIVE */
+@media(max-width: 768px) {
+    .hero-text h1 {
+        font-size: 35px;
+    }
+
+    .service-box {
+        flex-direction: column;
+    }
+}
