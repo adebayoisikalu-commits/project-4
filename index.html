@@ -1,20 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="index.css">
-</head>
-<body>
-    <!DOCTYPE html>
+   <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Music Business Landing Page</title>
-    <link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
 
@@ -30,6 +20,7 @@
             </ul>
         </nav>
     </header>
+
     <!-- HERO -->
     <section id="home" class="hero">
         <div class="hero-text">
@@ -42,31 +33,220 @@
     <!-- SERVICES -->
     <section id="services" class="services">
         <h2>Our Services</h2>
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Search music category (Afro, Rap, R&b....)"
+        >
+
+        <p id="notFound" style="display: none; margin-top: 20px; color: #ff0000; font-size: 18px;">
+ Product not found
+</p>
+
         <div class="service-box">
-            <div class="box">
-                <h3>Music Production</h3>
-                <p>Create unique beats and full productions tailored to your style.</p>
-            </div>
-            <div class="box">
-                <h3>Mixing & Mastering</h3>
-                <p>High-quality audio finishing for a professional sound.</p>
-            </div>
-            <div class="box">
-                <h3>Recording Session</h3>
-                <p>Studio-quality recording with premium equipment.</p>
-            </div>
+
+             <div class="box" data-category="rap">
+  <img src="artworks-OWNKrpo42z1aKE8I-r2NrEQ-t500x500.jpg" alt="Rap Music">
+  <h3>Trance</h3>
+  <iframe
+  src="https://open.spotify.com/embed/track/5wG3HvLhF6Y5KTGlK0IW3J"
+  width="100%"
+  height="152"
+  frameborder="0"
+  allow="encrypted-media"
+></iframe>
+</div>
+
+<div class="box" data-category="rap">
+    <img src="download.jfif" alt="drake">
+  <h3>Champagne Poetry - Drake</h3>
+  <iframe src="https://open.spotify.com/embed/track/2HSmyk2qMN8WQjuGhaQgCk"
+  allow="encrypted-media"
+></iframe>
+</div>
+
+<div class="box" data-category="rap">
+   <img src="download (1).jfif" alt="i am music">
+<iframe
+  src="https://open.spotify.com/embed/track/15SMWqYDjJaGYJ1FunTFCu"
+  allow="encrypted-media"
+></iframe>
+</div>
+
+<div class="box" data-category="rap">
+    <img src="download (2).jfif" alt="">
+  <h3>DILEMMA</h3>
+  <iframe
+    src="https://open.spotify.com/embed/track/1OrR5tTnYaryjbfZ8Jl2wT"
+    allow="encrypted-media"
+  ></iframe>
+</div>
+
+<div class="box" data-category="rap"> 
+    <img src="download (3).jfif" alt="">
+  <h3>COMË N GO </h3>
+  <iframe
+    src="https://open.spotify.com/embed/track/2mNGL7mZILSqZHxGboJaO9"
+    allow="encrypted-media"
+  ></iframe>
+</div>
+
+  <div class="box" data-category="rap">
+    <img src="download (14).jfif" alt="Music cover">
+  <h3>What Did I Miss? – Drake</h3>
+  <iframe
+    src="https://open.spotify.com/embed/track/57GsLpRtEtrzcPGPop20rS"
+    allow="encrypted-media"
+  ></iframe>
+</div>
+
+
+<div class="box" data-category="afro">
+    <img src="download (5).jfif" alt="music cover">
+  <h3>Away </h3>
+  <iframe
+    src="https://open.spotify.com/embed/track/14gQ7SmMZeeEC3YAPB5vFw"
+    allow="encrypted-media"
+  ></iframe>
+</div>
+
+<div class="box" data-category="afro">
+    <img src="download (6).jfif" alt="music cover">
+  <h3>CHANEL </h3>
+  <iframe
+    src="https://open.spotify.com/embed/track/4VxTzYm00mg82MuoT35Ja7"
+    allow="encrypted-media"
+  ></iframe>
+</div>
+
+<div class="box" data-category="afro">
+    <img src="download (7).jfif" alt="music cover">
+  <h3>Shakabulizzy</h3>
+  <iframe
+    src="https://open.spotify.com/embed/track/1Yf58S4QQwxqYSJZm5JxmA"
+    allow="encrypted-media"
+  ></iframe>
+</div>
+
+<div class="box" data-category="afro">
+    <img src="download (8).jfif" alt="music cover">
+  <h3>Guatemala</h3>
+  <iframe
+    src="https://open.spotify.com/embed/track/0TCnOEVeLQMXOUrpPlM7uY"
+    allow="encrypted-media"
+  ></iframe>
+</div>
+
+<div class="box" data-category="afro">
+    <img src="download (9).jfif" alt="music cover">
+  <h3>Trouble Maker</h3>
+  <iframe
+    src="https://open.spotify.com/embed/track/6m2mV5CVBAfP1zO2R5kiOy"
+    allow="encrypted-media"
+  ></iframe>
+</div>
+
+ <div class="box" data-category="afro">
+    <img src="download (10).jfif" alt="music cover">
+  <h3>Remember</h3>
+  <iframe
+    src="https://open.spotify.com/embed/track/0Q1bMs3xLQiDEeaneehdxv"
+    allow="encrypted-media"
+  ></iframe>
+</div>
+
+
+<div class="box" data-category="rnb">
+    <img src="download (11).jfif" alt="music cover">
+  <h3>Wine Pon You</h3>
+  <iframe
+    src="https://open.spotify.com/embed/track/2s4AcE9n80mSHl87lp4gIm"
+    allow="encrypted-media"
+  ></iframe>
+</div>
+
+<div class="box" data-category="rnb">
+    <img src="download (12).jfif" alt="music cover">
+  <h3>Don’t</h3>
+  <iframe
+    src="https://open.spotify.com/embed/track/7lxWzjZCSkXndL8eYKfFWU"
+    allow="encrypted-media"
+  ></iframe>
+</div>
+
+<div class="box" data-category="rnb">
+    <img src="download (13).jfif" alt="music cover">
+  <h3>Get You – Daniel Caesar (feat. Kali Uchis)</h3>
+  <iframe
+    src="https://open.spotify.com/embed/track/7zFXmv6vqI4qOt4yGf3jYZ"
+  ></iframe>
+</div>
+
+<div class="box" data-category="rnb">
+    <img src="download (15).jfif" alt="music cover">
+  <h3>Snooze – SZA</h3>
+  <iframe
+    src="https://open.spotify.com/embed/track/4iZ4pt7kvcaH6Yo8UoZ4s2"
+    allow="encrypted-media">
+  </iframe>
+</div>
+
+ <div class="box" data-category="hiphop">
+    <img src="download (16).jfif" alt="music cover">
+    <h3>Link up</h3>
+<iframe
+  src="https://open.spotify.com/embed/track/0y8Pu7x5jXgUjOIJvQIF5L"
+  frameborder="0"
+  allow="encrypted-media"
+></iframe>
+ </div>
+
+  <div class="box" data-category="hiphop">
+    <img src="download (17).jfif" alt="music cover">
+  <h3>Lovers – Anna of the North</h3>
+  <iframe
+    src="https://open.spotify.com/embed/track/6q8onrzcka32nGVrnWYGBQ"
+    allow="encrypted-media"
+  ></iframe>
+</div>
+
+   <div class="box" data-category="hiphop">
+    <img src="download (18).jfif" alt="music cover">
+  <h3>Knock Knock – SoFaygo</h3>
+  <iframe
+     src="https://open.spotify.com/embed/track/6aHoPULNO7pSL2ZfUY0bU8"
+    allow="encrypted-media">
+  </iframe>
+</div>
+
+<div class="box" data-category="hiphop">
+    <img src="download (19).jfif" alt="music cover">
+  <h3>500lbs</h3>
+  <iframe
+     src="https://open.spotify.com/embed/track/1xWkeSPhf3bZqHY7Ncz8vp"
+    allow="encrypted-media">
+  </iframe>
+</div>
+
+        
         </div>
     </section>
 
     <!-- ABOUT -->
     <section id="about" class="about">
-        <div class="about-text">
-            <h2>About Us</h2>
-            <p>
-                We are a professional music studio helping artists, creators, and brands produce premium sound.
-                With years of experience, we deliver quality production that stands out.
-            </p>
-        </div>
+         <h2>About Us</h2>
+<p>
+MusicPro is a creative music platform built for artists, producers, and music lovers.
+We focus on quality sound, clean visuals, and a smooth listening experience.
+</p>
+
+<p>
+Our goal is simple — to bring music closer to people while giving artists a space to
+showcase their sound. From Afro to Rap and R&B, we highlight diverse styles that
+connect cultures and emotions.
+</p>
+
     </section>
 
     <!-- CONTACT -->
@@ -76,7 +256,6 @@
         <h4>Bayo17032@gmail.com</h4>
     </section>
 
+    <script src="script.js"></script>
 </body>
-</html>
-</body>
-</html>
+</html>                    

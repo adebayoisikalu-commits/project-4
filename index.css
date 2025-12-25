@@ -1,4 +1,4 @@
-@font-face {
+  @font-face {
   font-family: 'SelfDeception';
   src: url('Self Deception - TTF.ttf');
 }
@@ -98,13 +98,22 @@ font-family: 'SelfDeception';
     text-align: center;
 }
 .services h2 {
+margin-top: 50px;
     font-family: 'Transcity';
     font-size: 30px;
 }
-.services h3{
-    font-family: 'Transcity';
-    font-size: 25px;
+#searchInput {
+    width: 300px;
+    padding: 12px;
+    margin: 30px auto;
+    display: block;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    text-align: center;
+    font-size: 16px;
 }
+
 
 .service-box {
     display: flex;
@@ -113,9 +122,28 @@ font-family: 'SelfDeception';
     flex-wrap: wrap;
     margin-top: 40px;
 }
+.box img {
+    width: 100%;
+    max-width: 250px;   /* controls image size */
+    height: auto;       /* keeps aspect ratio */
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+.box h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
 
+iframe {
+  width: 100%;
+  height: 152px;
+  border-radius: 10px;
+  border: none;
+}
 .box {
-    width: 300px;
+    width: 350px;
+    display: block;
+    text-decoration: none;
     background: #222;
     padding: 25px;
     border-radius: 10px;
@@ -123,6 +151,7 @@ font-family: 'SelfDeception';
 }
 
 .box:hover {
+    transform: scale(1.05);
     background: #333;
 }
 
@@ -151,6 +180,7 @@ font-family: 'SelfDeception';
   .contact h2 {
 font-family: 'Transcity';
   }
+
 /* RESPONSIVE */
 @media(max-width: 768px) {
     .hero-text h1 {
@@ -160,4 +190,4 @@ font-family: 'Transcity';
     .service-box {
         flex-direction: column;
     }
-}
+}               
