@@ -116,13 +116,14 @@ margin-top: 50px;
 }
 
 
-.service-box {
+ .service-box {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  grid-template-columns: repeat(3, 1fr);
   gap: 30px;
   margin-top: 40px;
   justify-items: center;
 }
+
 
 .box img {
     width: 100%;
@@ -189,12 +190,40 @@ margin-top: 50px;
 font-family: 'Transcity';
   }
 
-  /*phone*/
+
+/*tablets*/
+
+@media (max-width: 1024px) {
+
+  /* HERO */
+  .hero {
+    height: auto;
+    padding: 100px 8%;
+  }
+
+  .hero-text h1 {
+    font-size: 45px;
+  }
+
+  .hero-text p {
+    font-size: 20px;
+  }
+
+   .service-box {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .box {
+    width: 100%;
+    max-width: 320px;
+  }
+  
+}
+
 
  /* PHONE SCREENS */
 @media (max-width: 480px) {
 
-  /* GENERAL RESET */
   body {
     padding-top: 80px;
     overflow-x: hidden;
@@ -249,10 +278,10 @@ font-family: 'Transcity';
     max-width: 100%;
   }
 
-  /* SERVICES / MUSIC GRID */
+  
   .service-box {
     display: grid;
-    grid-template-columns: 1fr; /* ✅ ONE COLUMN */
+    grid-template-columns: 1fr; 
     gap: 20px;
     padding: 0 10px;
   }
@@ -292,35 +321,4 @@ font-family: 'Transcity';
     margin: 20px 15px;
     text-align: center;
   }
-}
-
-
-
-/*tablets*/
-
-@media (max-width: 1024px) {
-
-  /* HERO */
-  .hero {
-    height: auto;
-    padding: 100px 8%;
-  }
-
-  .hero-text h1 {
-    font-size: 45px;
-  }
-
-  .hero-text p {
-    font-size: 20px;
-  }
-
-   .service-box {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .box {
-    width: 100%;
-    max-width: 320px;
-  }
-  
 }
